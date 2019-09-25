@@ -1,0 +1,31 @@
+{
+  "name": "github-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "lodash": "^4.17.10",
+    "node-normalize-scss": "^8.0.0",
+    "nuxt": "^1.4.1",
+    "nuxt-property-decorator": "^1.2.0",
+    "typeit": "^6.0.2",
+    "vuex-class": "^0.3.0"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.110",
+    "@types/node": "^9.4.6",
+    "node-sass": "^4.9.0",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^7.0.3",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.2",
+    "vue-svg-loader": "^0.5.0"
+  }
+}
