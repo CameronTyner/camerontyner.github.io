@@ -1,0 +1,11 @@
+html {
+  background-color: #eee;
+}
+
+.container {
+  width: 700px;
+  margin: 64px auto auto;
+
+  /*font-size: 1.2rem;*/
+  font-family: -apple-system, Roboto, sans-serif, serif;
+}

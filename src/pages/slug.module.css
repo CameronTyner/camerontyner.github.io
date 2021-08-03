@@ -1,0 +1,20 @@
+#back {
+  text-decoration: none;
+}
+
+#back > p {
+  display: inline-block;
+  /*padding-top: 20px;*/
+  /*padding-bottom: 20px;*/
+  /*font-size: 30px;*/
+  margin: 0;
+}
+
+/*.slick-track {*/
+/*  display: flex !important;*/
+/*  align-items: center !important;*/
+/*}*/
+
+/*.slick-next:before, .slick-prev:before {*/
+/*  color: black !important;*/
+/*}*/
