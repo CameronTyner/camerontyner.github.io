@@ -41,8 +41,8 @@ const IndexPage = ({ data }) => {
           This page is under construction—content and styling is still being
           worked on.
         </p>
-        <p style={paragraphStyles}>
-          In the meantime, please see my deployed projects:
+        <div style={paragraphStyles}>
+          <p>In the meantime, please see my deployed projects:</p>
           <ul>
             <li>
               <a href="https://cameron-tyner-capstone.herokuapp.com/">
@@ -60,7 +60,7 @@ const IndexPage = ({ data }) => {
               </a>
             </li>
           </ul>
-        </p>
+        </div>
       </section>
 
       <section>
