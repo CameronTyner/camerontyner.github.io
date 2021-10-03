@@ -5,10 +5,6 @@ module.exports = {
     title: "Cameron Tyner Portfolio",
   },
   plugins: [
-    "gatsby-plugin-image",
-    "gatsby-transformer-remark",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -16,5 +12,9 @@ module.exports = {
         path: `${__dirname}/content/projects/`,
       },
     },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
   ],
 };
