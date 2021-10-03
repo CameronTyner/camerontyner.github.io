@@ -32,10 +32,10 @@ const IndexPage = ({ data }) => {
           Hi, I'm <span style={headingAccentStyles}>Cameron Tyner</span>
         </h1>
         <p style={paragraphStyles}>
-          Welcome to my portfolio! I am a Full Stack Web/Software Developer from
-          Hamilton, <abbr title="Ontario, Canada">ON</abbr> who recently
-          graduated with Honours from the Software Development program at Mohawk
-          College.
+          Welcome to my portfolio! I am a Full Stack Web/Software Developer
+          located in Hamilton, <abbr title="Ontario, Canada">ON</abbr> who
+          recently graduated with Honours from the Software Development program
+          at Mohawk College.
         </p>
         <p style={paragraphStyles}>
           This page is under construction—content and styling is still being
