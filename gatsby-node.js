@@ -9,6 +9,7 @@ type Frontmatter {
   slug: String!
   date: Date! @dateformat(formatString: "YYYY-MM-DD")
   url: String
+  technologies: [String]
 }`;
   createTypes(typeDefs);
 };

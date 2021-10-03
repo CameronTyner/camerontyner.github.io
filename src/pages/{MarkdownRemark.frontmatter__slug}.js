@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import backArrowIcon from "../images/back_arrow.svg";
-import { back, slickTrack, slickNext, slickPrev } from "./slug.module.css";
+import styles from "./slug.module.css";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -22,18 +22,21 @@ export default function Template({
     slidesToScroll: 1,
     arrows: true,
     // centerMode: true,
+    // nextArrow: <></>,
+    // prevArrow: <></>,
   };
 
   return (
     <Layout pageTitle={frontmatter.title} className="blog-post-container">
       <nav>
-        <Link to={"/"} title="Back to home" id={back}>
+        <Link to={"/"} title="Back to home">
           <img src={backArrowIcon} alt="" />
           {/*<p>Back to home</p>*/}
         </Link>
       </nav>
       <div className="blog-post">
-        <Slider {...settings} className={[slickTrack, slickNext, slickPrev]}>
+        <Slider {...settings}>
+          {/*id={carousel}>*/}
           {frontmatter.images?.map((image) => (
             <div>
               <GatsbyImage image={getImage(image.src)} alt="" />
@@ -44,6 +47,16 @@ export default function Template({
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
         <div dangerouslySetInnerHTML={{ __html: html }} />
+        {frontmatter.technologies && (
+          <>
+            <h2>Technologies used:</h2>
+            <ul>
+              {frontmatter.technologies.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </>
+        )}
       </div>
     </Layout>
   );
@@ -65,6 +78,7 @@ export const pageQuery = graphql`
           }
           caption
         }
+        technologies
       }
     }
   }
