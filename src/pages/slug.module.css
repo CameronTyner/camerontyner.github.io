@@ -1,20 +1,25 @@
-#back {
-  text-decoration: none;
-}
+/*#back {*/
+/*    text-decoration: none;*/
+/*}*/
 
-#back > p {
-  display: inline-block;
-  /*padding-top: 20px;*/
-  /*padding-bottom: 20px;*/
-  /*font-size: 30px;*/
-  margin: 0;
-}
+/*#back p {*/
+/*    display: inline-block;*/
+/*    !*padding-top: 20px;*!*/
+/*    !*padding-bottom: 20px;*!*/
+/*    !*font-size: 30px;*!*/
+/*    margin: 0;*/
+/*}*/
 
-/*.slick-track {*/
+/*#carousel .slick-track {*/
 /*  display: flex !important;*/
 /*  align-items: center !important;*/
 /*}*/
 
-/*.slick-next:before, .slick-prev:before {*/
+/*#carousel .slick-next:before, #carousel .slick-prev:before {*/
 /*  color: black !important;*/
 /*}*/
+
+ul {
+    position: relative;
+    top: -1rem;
+}
